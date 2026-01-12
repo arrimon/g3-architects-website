@@ -7,3 +7,55 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* Shared Style */
+.display-flex {
+    display: flex;
+}
+.text-gray {
+    color: #424242;
+}
+.text-light-gray {
+    color: #727272;
+}
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary {
+    background-color: #FF900E;
+    color: #FFFFFF;
+    font-weight: 20PX;
+    font-weight: 600;
+    border: none;
+    padding: 20PX 25PX;
+    border-radius: 5PX;
+}
+/* Header Style */
+
+
+/* Navbar Style */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-item:last-child {
+    margin-right: 0px;
+}
+.nav-link a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar, .banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
