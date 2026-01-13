@@ -33,7 +33,7 @@
     padding: 20px 25px;
     border-radius: 8PX;
 }
-main {
+main, footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -101,10 +101,6 @@ main > section {
     margin-left: 73px;
     max-width: 530px
 }
-/* .Feature-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-} */
 
 #quick-list{
     font-weight: 500;
@@ -112,6 +108,44 @@ main > section {
 .Feature-description {
     font-size: 1rem;
     line-height: 26px;
+}
+
+/* Features Will Enjoy Section */
+.feature-section {
+    gap: 140px;
+}
+.feature-architects img {
+    width: 100%;
+}
+#Feature-section-title {
+    justify-content: space-between;
+    color: #131313 !important;
+    border-left: 5px solid #FF900E;
+    padding-left: 50px;
+}
+.Feature-section-description {
+    max-width: 586px;
+}
+.feature-card-title {
+    margin-bottom: 10px;
+}
+.feature-card {
+    padding: 15px 30px;
+    max-width: 586px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+#experience-badge {
+    padding: 36px 35px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year {
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
 /* Some Facts related Style */
@@ -164,6 +198,20 @@ main > section {
   transition: filter 0.3s ease;
 }
 
+/* Footer area */
+footer {
+    justify-content: center;
+    margin: 100px auto;
+    background-color: #FFF4E7;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    color: #424242;
+}
+
 /* Responsive for Mobile Media Query */
 @media screen and (max-width: 576px) 
 {
@@ -189,13 +237,21 @@ main > section {
         justify-items: center;
         gap: 24px;
     }
+    #experience-badge {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 
 /* Responsive for Medium-device Media Query */
 @media screen and (min-width:576px) and (max-width: 992px) 
 {
-    .teams {
+    .teams,
+    .feature-section 
+    {
         flex-direction: column;
     }
     .our-feachers{
@@ -209,8 +265,16 @@ main > section {
         justify-items: center;
         gap: 50px;
     }
-}
-
-.display-hide {
-    display: none;
+    .feature-card{
+        min-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #experience-badge {
+        width: 40%;
+        margin: 0 auto;
+        margin-top: -80px;
+        margin-left: 5px;
+    }
+    
 }
