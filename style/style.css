@@ -12,6 +12,9 @@
 .display-flex {
     display: flex;
 }
+.text-primary {
+    color: #FF900E;
+}
 .text-gray {
     color: #424242;
 }
@@ -24,11 +27,18 @@
 .btn-primary {
     background-color: #FF900E;
     color: #FFFFFF;
-    font-weight: 20PX;
+    font-weight: 1.25rem;
     font-weight: 600;
     border: none;
-    padding: 20PX 25PX;
-    border-radius: 5PX;
+    padding: 20px 25px;
+    border-radius: 8PX;
+}
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section {
+    margin-top: 130px;
 }
 /* Header Style */
 
@@ -58,4 +68,70 @@
 .navbar, .banner {
     max-width: 1440px;
     margin: 0 auto;
+}
+/* Baner style */
+.banner-container{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title {
+    font-weight: 600;
+    font-size: 4rem;
+}
+.banner-image {
+    width: 100%;
+}
+/* Team and feacher related style */
+.teams {
+    align-items: center;
+}
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px
+}
+.our-feachers{
+    margin-left: 73px;
+    max-width: 530px
+}
+.Feature-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+#quick-list{
+    font-weight: 500;
+}
+.Feature-description {
+    font-size: 1rem;
+    line-height: 26px;
+}
+
+/* Responsive for Mobile Media Query */
+@media screen and (max-width: 576px) 
+{
+    .display-flex {
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-feachers{
+        margin-left: 20px;
+    }
+}
+
+
+/* Responsive for Medium-device Media Query */
+@media screen and (min-width:576px) and (max-width: 992px) 
+{
+    .teams {
+        flex-direction: column;
+    }
+    .our-feachers{
+        margin: 20px auto;
+        text-align: center;
+    }
 }
