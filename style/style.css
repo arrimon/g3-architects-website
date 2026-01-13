@@ -27,11 +27,11 @@
 .btn-primary {
     background-color: #FF900E;
     color: #FFFFFF;
-    font-weight: 1.25rem;
+    font-size: 1.25rem;
     font-weight: 600;
     border: none;
     padding: 20px 25px;
-    border-radius: 8PX;
+    border-radius: 8px;
 }
 main, footer {
     max-width: 1440px;
@@ -97,7 +97,7 @@ main > section {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px
 }
-.our-feachers{
+.our-features{
     margin-left: 73px;
     max-width: 530px
 }
@@ -105,7 +105,7 @@ main > section {
 #quick-list{
     font-weight: 500;
 }
-.Feature-description {
+.feature-description {
     font-size: 1rem;
     line-height: 26px;
 }
@@ -117,13 +117,13 @@ main > section {
 .feature-architects img {
     width: 100%;
 }
-#Feature-section-title {
+#feature-section-title {
     justify-content: space-between;
     color: #131313 !important;
     border-left: 5px solid #FF900E;
     padding-left: 50px;
 }
-.Feature-section-description {
+.feature-section-description {
     max-width: 586px;
 }
 .feature-card-title {
@@ -164,9 +164,11 @@ main > section {
     border-radius: 8px;
     width: 240px;
     height: 240px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .fact-number {
     font-size: 2.5rem;
@@ -197,6 +199,9 @@ main > section {
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
+.sponsor-company img:hover {
+  filter: grayscale(0%);
+}
 
 /* Footer area */
 footer {
@@ -225,7 +230,7 @@ footer p {
         grid-template-columns: repeat(1, 1fr);
     }
     
-    .our-feachers {
+    .our-features {
         margin-left: 20px;
     }
     .sponsor-info {
@@ -238,10 +243,13 @@ footer p {
         gap: 24px;
     }
     #experience-badge {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-left: 20px;
+        width: 60%;
+        padding: 15px 20px;
+        margin-top: -10;
+        margin-left: 1px;
+    }
+    #experience-year {
+        font-size: 2.5rem;
     }
 }
 
@@ -254,7 +262,7 @@ footer p {
     {
         flex-direction: column;
     }
-    .our-feachers{
+    .our-features{
         margin: 20px auto;
         text-align: center;
     }
